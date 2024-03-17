@@ -590,7 +590,14 @@ section .container {
   background: linear-gradient(45deg, #780606, #4e0303); /* Tambahkan efek gradient */
   transition: border-color 0.3s, box-shadow 0.3s; /* Tambahkan transisi */
 }
+@media (max-width: 768px) {
+  .about-me .img-fluid {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
 
+  }
+}
 .about-me .img-fluid:hover {
   border-color: rgba(255, 7, 7, 0.313); /* Ubah warna border saat hover */
   box-shadow: 0 0 20px rgb(255, 0, 0); /* Ubah ukuran shadow saat hover */
