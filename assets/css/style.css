@@ -35,6 +35,57 @@ body::before {
   }
 }
 
+/** 
+btn resume
+*/
+
+.btn-rsm {
+  display: inline-block;
+  padding: 5px 10px; /* Mengurangi padding untuk mengecilkan ukuran tombol */
+  text-decoration: none;
+  right: 10px;
+  background: rgba(255, 255, 255, 0); /* Warna latar belakang tombol */
+  color: rgba(255, 255, 255, 0.7); /* Warna teks tombol */
+  border-radius: 10px; /* Membuat sudut tombol tumpul */
+  border: none; /* Menghapus border */
+  cursor: pointer;
+  position: relative; /* Menjadikan posisi tombol relatif untuk menggunakan posisi absolut */
+  overflow: hidden;
+  transition: color 0.3s; /* Efek transisi saat mengubah warna teks */
+}
+
+.btn-rsm::before {
+  content: ''; /* Menambahkan pseudo-element sebelumnya */
+  position: absolute; /* Menjadikan posisi absolut */
+  top: 0;
+  right: 100%; /* Mulai dari kanan */
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #ed2c2c; /* Warna latar belakang yang akan ditransisikan */
+  z-index: -1; /* Menempatkan latar belakang di bawah tombol */
+  transition: right 0.3s; /* Efek transisi saat mengubah posisi latar belakang */
+  border-radius: 10px; /* Membuat sudut tombol tumpul */
+  
+}
+
+
+.btn-rsm:hover::before {
+  right: 0; /* Menggeser latar belakang dari kanan ke kiri saat hover */
+}
+
+.btn-rsm:hover {
+  color: #fff; /* Mengubah warna teks menjadi putih saat hover */
+}
+
+.navbar-mobile .btn-rsm{
+  bottom: 2px;
+}
+
+.navbar-mobile .btn-rsm:hover::before{
+  right: 0px;
+}
+
 a {
   color: #ed2c2c;
   text-decoration: none;
@@ -59,8 +110,32 @@ h6 {
 --------------------------------------------------------------*/
 .myname{
   color: #ed2c2c; 
+  transition: ease-in-out 0.3s;
+  display: inline-block;
 
 }
+.myname:hover{
+  transform: scale(1.1);
+}
+
+.myname2{
+  transition: ease-in-out 0.3s;
+  display: inline-block;
+
+}
+.myname2:hover{
+  transform: scale(1.1);
+}
+
+.myname3{
+  transition: ease-in-out 0.3s;
+  display: inline-block;
+
+}
+.myname3:hover{
+  transform: scale(1.1);
+}
+
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
