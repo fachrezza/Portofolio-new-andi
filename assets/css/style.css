@@ -185,6 +185,7 @@ h6 {
   color: #ed2c2c; 
   transition: ease-in-out 0.3s;
   display: inline-block;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
 
 }
 .myname:hover{
@@ -243,7 +244,7 @@ h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
 }
 
 #header h2 span {
@@ -295,10 +296,13 @@ h6 {
   #header h2 {
     font-size: 20px;
     line-height: 30px;
+    background-color: #000000c8;
   }
 
   #header .social-links {
+    position: absolute;
     margin-top: 15px;
+    top: 90%;
   }
 
   #header .container {
