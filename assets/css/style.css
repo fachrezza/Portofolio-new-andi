@@ -57,14 +57,7 @@ body::before {
   filter: blur(5px); /* Efek blur */
 }
 
-#services .coming-soon{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3; /* Menempatkan teks di atas overlay dan konten */
-  font-size: 36px; /* Ukuran teks */
-}
+
 
 .coming-soon {
   position: absolute;
