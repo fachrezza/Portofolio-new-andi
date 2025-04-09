@@ -35,27 +35,7 @@ body::before {
   }
 }
 
-.overlay {
-  position: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.576); /* Warna overlay hitam transparan */
-  z-index: 1; /* Menempatkan overlay di atas konten */
-}
 
-.overlay .interests {
-  position: flex;
-  z-index: 2; /* Menempatkan konten di atas overlay */
-  filter: blur(5px); /* Efek blur */
-}
-
-.overlay .container {
-  position: flex;
-  z-index: 2; /* Menempatkan konten di atas overlay */
-  filter: blur(5px); /* Efek blur */
-}
 
 
 
